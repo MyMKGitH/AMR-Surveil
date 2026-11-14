@@ -11,6 +11,7 @@ Repository hygiene after the first public upload (no code behaviour change).
 - CI: legs not yet verified by the author (Python 3.10-3.12 and pandas 2.2) are marked experimental and do not turn the run red.
 - `CITATION.cff`: removed an invalid top-level `affiliation` key, added the ORCID iD and DOI, corrected the release date.
 - README: the FishAMR-Link and EpiResNet links point to their own repositories.
+- CI lint job pins the ruff series used for formatting; Dependabot is quieter (no Python-image or minimum-version bumps).
 
 ## [1.1.1] - 2026-11-14
 
