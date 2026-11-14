@@ -61,5 +61,11 @@ def test_app_avoids_altair_backed_streamlit_charts():
     from pathlib import Path
 
     source = (Path(__file__).resolve().parents[1] / "app.py").read_text(encoding="utf-8")
-    for name in ("st.bar_chart", "st.line_chart", "st.area_chart", "st.scatter_chart", "st.altair_chart"):
+    for name in (
+        "st.bar_chart",
+        "st.line_chart",
+        "st.area_chart",
+        "st.scatter_chart",
+        "st.altair_chart",
+    ):
         assert name not in source

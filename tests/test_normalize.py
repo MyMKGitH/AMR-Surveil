@@ -63,7 +63,7 @@ def test_write_csv_neutralises_spreadsheet_formulas(tmp_path):
 
     frame = pd.DataFrame(
         {
-            "sample_id": ["=HYPERLINK(\"http://x\")", "+cmd", "@SUM(1)", "-cmd", "-1.5", "S1", None],
+            "sample_id": ['=HYPERLINK("http://x")', "+cmd", "@SUM(1)", "-cmd", "-1.5", "S1", None],
             "n": [1, 2, 3, 4, 5, 6, 7],
             "v": [-1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0],
         }

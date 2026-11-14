@@ -4,12 +4,13 @@ title: "AMR-Surveil: Reproducible Genomic and Epidemiological Surveillance of An
 authors:
   - family-names: Khalifa
     given-names: Moad
-affiliation: Independent researcher and software developer
+    orcid: "https://orcid.org/0000-0002-1740-7654"
 version: 1.1.1
-date-released: 2026-11-12
+date-released: 2026-11-14
+doi: 10.5281/zenodo.24224046
 type: software
 license: MIT
-repository-code: https://github.com/MyMKGitH/amr-surveil
+repository-code: https://github.com/MyMKGitH/AMR-Surveil
 keywords:
   - antimicrobial resistance
   - microbial genomics

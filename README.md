@@ -19,7 +19,7 @@ short_description: Auditable genomic + epidemiological AMR surveillance workbenc
 **An auditable analysis layer that connects AMR gene detection, phenotypic AST, surveillance context and model outputs — and tells you when you are *not* allowed to compare them.**
 
 <p>
-  <a href="https://github.com/MyMKGitH/amr-surveil/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/MyMKGitH/amr-surveil/ci.yml?branch=main&label=CI&logo=github" alt="CI"></a>
+  <a href="https://github.com/MyMKGitH/AMR-Surveil/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/MyMKGitH/amr-surveil/ci.yml?branch=main&label=CI&logo=github" alt="CI"></a>
   <img src="https://img.shields.io/badge/release-1.1.1-1f6feb" alt="Release 1.1.1">
   <img src="https://img.shields.io/badge/python-3.10%E2%80%933.13-3776AB?logo=python&logoColor=white" alt="Python 3.10-3.13">
   <img src="https://img.shields.io/badge/tests-388%20passing-2ea44f?logo=pytest&logoColor=white" alt="388 tests">
@@ -32,7 +32,7 @@ short_description: Auditable genomic + epidemiological AMR surveillance workbenc
 
 [![DOI](https://zenodo.org/badge/1457907948.svg)](https://doi.org/10.5281/zenodo.24224046)
 
-**Author:** MK (Moad Khalifa) · [GitHub](https://github.com/MyMKGitH) · Builds on [FishAMR-Link](https://github.com/MyMKGitH) and [EpiResNet](https://github.com/MyMKGitH)
+**Author:** MK (Moad Khalifa) · [GitHub](https://github.com/MyMKGitH) · Builds on [FishAMR-Link](https://github.com/MyMKGitH/FishAMR-Link) and [EpiResNet](https://github.com/MyMKGitH/EpiResNet)
 
 </div>
 
@@ -70,7 +70,7 @@ Compared with 0.1.0 (descriptive integration only), the current release adds the
 ## Quick start
 
 ```bash
-git clone https://github.com/MyMKGitH/amr-surveil && cd amr-surveil
+git clone https://github.com/MyMKGitH/AMR-Surveil && cd amr-surveil
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 

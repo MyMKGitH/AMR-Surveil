@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented here. Format: [Keep a Changelog](https://keepachangelog.com/).
 
+## [Unreleased]
+
+Repository hygiene after the first public upload (no code behaviour change).
+- Hidden files that a browser drag-and-drop upload silently skips were added: `.github/workflows/ci.yml`, `.github/dependabot.yml`,
+  `.github/ISSUE_TEMPLATE/bug_report.md`, `.streamlit/config.toml` (the Dockerfile copies it), `.gitignore`, `.dockerignore`, `.gitattributes`.
+- Code formatted with `ruff format` so the CI lint job passes.
+- CI: legs not yet verified by the author (Python 3.10-3.12 and pandas 2.2) are marked experimental and do not turn the run red.
+- `CITATION.cff`: removed an invalid top-level `affiliation` key, added the ORCID iD and DOI, corrected the release date.
+- README: the FishAMR-Link and EpiResNet links point to their own repositories.
+
 ## [1.1.1] - 2026-11-14
 
 Theme: **final sweep after a second real local run**. No interface changes.

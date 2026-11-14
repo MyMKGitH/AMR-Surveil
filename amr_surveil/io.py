@@ -86,8 +86,7 @@ def neutralise_formulas(frame: pd.DataFrame) -> pd.DataFrame:
     for pos in range(out.shape[1]):  # positional: tolerates duplicate column labels
         series = out.iloc[:, pos]
         if not (
-            pd.api.types.is_object_dtype(series.dtype)
-            or pd.api.types.is_string_dtype(series.dtype)
+            pd.api.types.is_object_dtype(series.dtype) or pd.api.types.is_string_dtype(series.dtype)
         ):
             continue
         flags = [isinstance(v, str) and bool(_FORMULA_START.match(v)) for v in series.tolist()]

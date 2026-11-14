@@ -6,7 +6,7 @@ ARG VERSION=1.1.1
 LABEL org.opencontainers.image.title="AMR-Surveil" \
       org.opencontainers.image.description="Reproducible genomic and epidemiological AMR surveillance workbench" \
       org.opencontainers.image.version="${VERSION}" \
-      org.opencontainers.image.source="https://github.com/MyMKGitH/amr-surveil" \
+      org.opencontainers.image.source="https://github.com/MyMKGitH/AMR-Surveil" \
       org.opencontainers.image.licenses="MIT"
 
 ENV PYTHONDONTWRITEBYTECODE=1 \

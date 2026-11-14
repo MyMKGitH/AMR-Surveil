@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install ruff
+      - run: ruff check .
+      - run: ruff format --check .
+
+  tests:
+    name: Python ${{ matrix.python-version }} / pandas ${{ matrix.pandas }}
+    runs-on: ubuntu-latest
+    # The author verified Python 3.13 + pandas 3.x. The other legs test the declared support range
+    # (pandas >= 2.2.3, Python >= 3.10); "experimental" legs may fail without turning the run red,
+    # and each failure is a real finding to fix, not noise.
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {python-version: "3.10", pandas: "2.2.3", experimental: true}
+          - {python-version: "3.11", pandas: "2.2.3", experimental: true}
+          - {python-version: "3.11", pandas: "latest", experimental: true}
+          - {python-version: "3.12", pandas: "latest", experimental: true}
+          - {python-version: "3.13", pandas: "latest", experimental: false}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+          if [ "${{ matrix.pandas }}" != "latest" ]; then python -m pip install "pandas==${{ matrix.pandas }}"; fi
+          python -c "import pandas; print('pandas', pandas.__version__)"
+      - name: Compile
+        run: python -m compileall -q amr_surveil app.py benchmarks scripts
+      - name: Tests (warnings are errors) with coverage floor
+        run: pytest --cov=amr_surveil --cov-report=term-missing --cov-fail-under=80
+      - name: Schemas are in sync with the contracts
+        run: python scripts/generate_schemas.py && git diff --exit-code schemas
+      - name: CLI end-to-end demo
+        run: amr-surveil demo --out "$RUNNER_TEMP/demo" && test -s "$RUNNER_TEMP/demo/results/report.md"
+
+  benchmark-smoke:
+    runs-on: ubuntu-latest
+    needs: tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -e ".[dev]"
+      - name: Benchmark with ground-truth check (small sizes)
+        run: python benchmarks/run_benchmarks.py --sizes 100 1000 --output "$RUNNER_TEMP/bench.json"
+
+  container:
+    name: Build and smoke-test container
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build --tag amr-surveil:ci .
+      - name: CLI inside the image
+        run: docker run --rm --entrypoint amr-surveil amr-surveil:ci demo --out /tmp/demo --samples 40
+      - name: Dashboard health endpoint
+        run: |
+          docker run -d --name app -p 7860:7860 amr-surveil:ci
+          for i in $(seq 1 30); do curl -fs http://127.0.0.1:7860/_stcore/health && exit 0; sleep 2; done
+          docker logs app; exit 1
