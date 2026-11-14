@@ -1,0 +1,7 @@
+organism,antimicrobial,standard,version,mic_s_le,mic_r_gt,zone_s_ge,zone_r_lt,source_url
+Escherichia coli,Cefotaxime,SYNTHETIC,0.0,1,2,20,17,https://example.invalid/synthetic-breakpoints
+Escherichia coli,Ciprofloxacin,SYNTHETIC,0.0,0.25,0.5,25,22,https://example.invalid/synthetic-breakpoints
+Escherichia coli,Meropenem,SYNTHETIC,0.0,2,8,22,16,https://example.invalid/synthetic-breakpoints
+Klebsiella pneumoniae,Cefotaxime,SYNTHETIC,0.0,1,2,20,17,https://example.invalid/synthetic-breakpoints
+Klebsiella pneumoniae,Ciprofloxacin,SYNTHETIC,0.0,0.25,0.5,25,22,https://example.invalid/synthetic-breakpoints
+Klebsiella pneumoniae,Meropenem,SYNTHETIC,0.0,2,8,22,16,https://example.invalid/synthetic-breakpoints

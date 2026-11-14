@@ -1,0 +1,24 @@
+country,source_sector,organism,antimicrobial,flag,severity,detail
+Exampleland,aquatic,Escherichia coli,Cefotaxime,small_denominator_years,WARNING,"years with fewer than 10 isolates: 2022 (n=3), 2023 (n=2), 2024 (n=2), 2025 (n=3)"
+Exampleland,aquatic,Escherichia coli,Cefotaxime,ast_method_changes_across_years,WARNING,AST method differs between years: 2022: broth_microdilution; 2023: broth_microdilution; 2024: broth_microdilution; 2025: disk_diffusion
+Exampleland,aquatic,Escherichia coli,Ciprofloxacin,small_denominator_years,WARNING,"years with fewer than 10 isolates: 2022 (n=3), 2023 (n=2), 2024 (n=2), 2025 (n=3)"
+Exampleland,aquatic,Escherichia coli,Meropenem,small_denominator_years,WARNING,"years with fewer than 10 isolates: 2022 (n=3), 2023 (n=2), 2024 (n=2), 2025 (n=3)"
+Exampleland,aquatic,Klebsiella pneumoniae,Cefotaxime,small_denominator_years,WARNING,"years with fewer than 10 isolates: 2022 (n=3), 2023 (n=6), 2024 (n=9), 2025 (n=2)"
+Exampleland,aquatic,Klebsiella pneumoniae,Cefotaxime,testing_volume_jump,WARNING,"tested isolates changed from 3 (2022) to 6 (2023); possible change in panel, laboratory participation or sampling"
+Exampleland,aquatic,Klebsiella pneumoniae,Cefotaxime,testing_volume_jump,WARNING,"tested isolates changed from 9 (2024) to 2 (2025); possible change in panel, laboratory participation or sampling"
+Exampleland,aquatic,Klebsiella pneumoniae,Ciprofloxacin,small_denominator_years,WARNING,"years with fewer than 10 isolates: 2022 (n=3), 2023 (n=6), 2024 (n=9), 2025 (n=2)"
+Exampleland,aquatic,Klebsiella pneumoniae,Ciprofloxacin,testing_volume_jump,WARNING,"tested isolates changed from 3 (2022) to 6 (2023); possible change in panel, laboratory participation or sampling"
+Exampleland,aquatic,Klebsiella pneumoniae,Ciprofloxacin,testing_volume_jump,WARNING,"tested isolates changed from 9 (2024) to 2 (2025); possible change in panel, laboratory participation or sampling"
+Exampleland,aquatic,Klebsiella pneumoniae,Meropenem,small_denominator_years,WARNING,"years with fewer than 10 isolates: 2022 (n=3), 2023 (n=6), 2024 (n=9), 2025 (n=2)"
+Exampleland,aquatic,Klebsiella pneumoniae,Meropenem,testing_volume_jump,WARNING,"tested isolates changed from 3 (2022) to 6 (2023); possible change in panel, laboratory participation or sampling"
+Exampleland,aquatic,Klebsiella pneumoniae,Meropenem,testing_volume_jump,WARNING,"tested isolates changed from 9 (2024) to 2 (2025); possible change in panel, laboratory participation or sampling"
+Exampleland,human,Escherichia coli,Cefotaxime,small_denominator_years,WARNING,"years with fewer than 10 isolates: 2022 (n=9), 2023 (n=6), 2024 (n=6), 2025 (n=9)"
+Exampleland,human,Escherichia coli,Cefotaxime,ast_method_changes_across_years,WARNING,AST method differs between years: 2022: broth_microdilution; 2023: broth_microdilution; 2024: broth_microdilution; 2025: disk_diffusion
+Exampleland,human,Escherichia coli,Ciprofloxacin,small_denominator_years,WARNING,"years with fewer than 10 isolates: 2022 (n=9), 2023 (n=6), 2024 (n=6), 2025 (n=9)"
+Exampleland,human,Escherichia coli,Meropenem,small_denominator_years,WARNING,"years with fewer than 10 isolates: 2022 (n=9), 2023 (n=6), 2024 (n=6), 2025 (n=9)"
+Exampleland,human,Klebsiella pneumoniae,Cefotaxime,small_denominator_years,WARNING,years with fewer than 10 isolates: 2024 (n=8)
+Exampleland,human,Klebsiella pneumoniae,Cefotaxime,testing_volume_jump,WARNING,"tested isolates changed from 8 (2024) to 20 (2025); possible change in panel, laboratory participation or sampling"
+Exampleland,human,Klebsiella pneumoniae,Ciprofloxacin,small_denominator_years,WARNING,years with fewer than 10 isolates: 2024 (n=8)
+Exampleland,human,Klebsiella pneumoniae,Ciprofloxacin,testing_volume_jump,WARNING,"tested isolates changed from 8 (2024) to 20 (2025); possible change in panel, laboratory participation or sampling"
+Exampleland,human,Klebsiella pneumoniae,Meropenem,small_denominator_years,WARNING,years with fewer than 10 isolates: 2024 (n=8)
+Exampleland,human,Klebsiella pneumoniae,Meropenem,testing_volume_jump,WARNING,"tested isolates changed from 8 (2024) to 20 (2025); possible change in panel, laboratory participation or sampling"

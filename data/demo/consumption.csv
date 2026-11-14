@@ -1,0 +1,2 @@
+year,country,care_sector,antimicrobial,atc_code,ddd_total,population_n,period_days,aware_group,source_name,data_source_type,source_url
+2024,Exampleland,community,Amoxicillin,J01CA04,1000000,100000,365,Access,Synthetic consumption fixture,dispensing,https://example.invalid/synthetic-consumption

@@ -1,0 +1,7 @@
+organism,gene,antimicrobial,mapping_source,match_type
+Escherichia coli,blaCTX-M-15,Cefotaxime,Synthetic fixture mapping (not a curated database),exact
+Escherichia coli,qnrS1,Ciprofloxacin,Synthetic fixture mapping (not a curated database),exact
+Escherichia coli,blaKPC-2,Meropenem,Synthetic fixture mapping (not a curated database),exact
+Klebsiella pneumoniae,blaCTX-M-15,Cefotaxime,Synthetic fixture mapping (not a curated database),exact
+Klebsiella pneumoniae,qnrS1,Ciprofloxacin,Synthetic fixture mapping (not a curated database),exact
+Klebsiella pneumoniae,blaKPC-2,Meropenem,Synthetic fixture mapping (not a curated database),exact

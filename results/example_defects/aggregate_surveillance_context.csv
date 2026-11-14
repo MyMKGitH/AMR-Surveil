@@ -1,0 +1,5 @@
+year,country,source_sector,organism,antimicrobial,resistant_n,tested_n,source_name,metric_definition,source_url,resistant_pct,evidence_level
+2023,Exampleland,human,Escherichia coli,Cefotaxime,18,100,Synthetic aggregate fixture,R isolates / isolates tested for this organism-antimicrobial group,https://example.invalid/synthetic,18.0,aggregate surveillance; not isolate-linked
+2024,Exampleland,human,Escherichia coli,Cefotaxime,22,110,Synthetic aggregate fixture,R isolates / isolates tested for this organism-antimicrobial group,https://example.invalid/synthetic,20.0,aggregate surveillance; not isolate-linked
+2024,Exampleland,aquatic,Escherichia coli,Cefotaxime,6,20,Synthetic aggregate fixture,R isolates / isolates tested for this organism-antimicrobial group,https://example.invalid/synthetic,30.0,aggregate surveillance; not isolate-linked
+2023,Exampleland,human,Escherichia coli,Cefotaxime,18,100,Synthetic aggregate fixture,R isolates / isolates tested for this organism-antimicrobial group,https://example.invalid/synthetic,18.0,aggregate surveillance; not isolate-linked

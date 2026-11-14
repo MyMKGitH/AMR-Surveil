@@ -1,0 +1,6 @@
+stage,table,record_id,reason,detail
+evidence_tier,amr_calls,SYN-00005|tetA,excluded_evidence_tier,tier excluded from genotype analysis by configuration
+evidence_tier,amr_calls,SYN-00033|sul1,excluded_evidence_tier,tier excluded from genotype analysis by configuration
+evidence_tier,amr_calls,SYN-00057|tetA,excluded_evidence_tier,tier excluded from genotype analysis by configuration
+evidence_tier,amr_calls,SYN-00069|tetA,excluded_evidence_tier,tier excluded from genotype analysis by configuration
+evidence_tier,amr_calls,SYN-00081|tetA,excluded_evidence_tier,tier excluded from genotype analysis by configuration

@@ -1,0 +1,13 @@
+table,severity,code,message,row_count,examples
+samples,ERROR,duplicate_sample_id,sample_id must be unique in samples.csv; joins would be ambiguous.,2,"[""SYN-00001"", ""SYN-00001""]"
+samples,ERROR,future_collection_date,Collection date is after the reference date 2026-11-07.,1,"[""2099-01-01""]"
+ast,ERROR,invalid_ast_category,"AST result must be S, I or R. EUCAST I means susceptible, increased exposure; other standards may define categories differently.",1,"[""0""]"
+aggregate_surveillance,ERROR,duplicate_aggregate_key,The same aggregate-surveillance key appears more than once. Rows are never summed automatically because duplicates would double-count; remove the duplicate or add a field that distinguishes the rows.,2,"[""0"", ""3""]"
+samples,WARNING,inconsistent_organism_labels,Labels in 'organism' differ only by case/whitespace; they are merged onto the most frequent spelling for analysis. Synonyms (e.g. abbreviations) are not merged: curate a controlled vocabulary upstream.,1,"[""Escherichia coli | escherichia coli""]"
+samples,WARNING,non_iso_collection_date,"Collection dates must be ISO 8601 (YYYY, YYYY-MM or YYYY-MM-DD). Other forms such as 05/06/2024 are ambiguous (day/month order) and are not parsed; the affected year is unknown.",1,"[""03/05/2024""]"
+ast,WARNING,unmatched_sample_id,Rows reference sample IDs absent from samples.csv; they are excluded from isolate-linked outputs.,1,"[""NOT-IN-MANIFEST""]"
+amr_calls,WARNING,low_identity_or_coverage_review,"Calls below identity 90% or coverage 60% are flagged for expert review. These are review flags, not call filters; no call is dropped for this reason.",1,"[""0""]"
+amr_calls,WARNING,low_confidence_evidence_tier,Calls from heuristic-motif or generic homology-search methods are not validated resistance-gene detections. They are excluded from linkage and concordance by the configured evidence-tier policy.,5,"[""3"", ""46"", ""78"", ""91"", ""114""]"
+ast,WARNING,missing_result,AST rows without result cannot contribute to categorical indicators.,1,"[""1""]"
+ast,WARNING,invalid_mic,"MIC must be a number, optionally with a censoring operator (<=, <, >, >=, =); decimal commas are not accepted. Original rows are retained for review.",1,"[""1,5""]"
+ast,WARNING,interpretation_before_collection,An AST result is dated before its isolate's collection date.,3,"[""SYN-00003"", ""SYN-00003"", ""SYN-00003""]"

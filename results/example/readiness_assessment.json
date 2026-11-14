@@ -1,0 +1,49 @@
+{
+  "blocking_reasons": [],
+  "criteria": [
+    {
+      "description": "WGS screening and AST share the same isolate (exact sample_id)",
+      "detail": "120 isolate(s) have a single screening record and at least one valid S/I/R result",
+      "id": "paired_isolate_level",
+      "met": true
+    },
+    {
+      "description": "AST method recorded for every paired AST record",
+      "detail": "method must be populated",
+      "id": "ast_method_recorded",
+      "met": true
+    },
+    {
+      "description": "Breakpoint standard and version recorded for every paired AST record",
+      "detail": "breakpoint_standard and breakpoint_version must be populated",
+      "id": "interpretive_standard_recorded",
+      "met": true
+    },
+    {
+      "description": "Screening tool, database and database version recorded for every paired isolate",
+      "detail": "screening table needs method, database and database_version",
+      "id": "screening_provenance_recorded",
+      "met": true
+    },
+    {
+      "description": "No organism conflicts between manifest and AST among paired isolates",
+      "detail": "0 conflicting isolate/organism label(s)",
+      "id": "organism_consistent",
+      "met": true
+    },
+    {
+      "description": "A gene-to-drug map with a source citation for every row was supplied",
+      "detail": "supply --gene-drug-map with mapping_source for every row",
+      "id": "cited_gene_drug_map",
+      "met": true
+    },
+    {
+      "description": "Sample-selection process documented by the analyst (cannot be verified by software)",
+      "detail": "set study.sample_selection_documented: true and describe it in study.selection_description",
+      "id": "sample_selection_documented",
+      "met": true
+    }
+  ],
+  "decision": "GO",
+  "n_paired_isolates": 120
+}

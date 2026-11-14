@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="t d">
+  <title id="t">AMR-Surveil data flow</title>
+  <desc id="d">Inputs from AMRFinderPlus, FishAMR-Link, EpiResNet and laboratory files pass through adapters, a quality audit and a go/no-go gate, producing indicators, concordance, context streams, a report and a provenance manifest.</desc>
+  <defs>
+    <style>
+      .bg{fill:#ffffff} .box{fill:#f3f7fb;stroke:#1f4e79;stroke-width:1.5;rx:10}
+      .gate{fill:#fff4e0;stroke:#b36b00;stroke-width:1.5;rx:10}
+      .out{fill:#eaf6ee;stroke:#2e7d4f;stroke-width:1.5;rx:10}
+      .t{font:600 14px system-ui,Segoe UI,Arial,sans-serif;fill:#14243a}
+      .s{font:12px system-ui,Segoe UI,Arial,sans-serif;fill:#3b4b5e}
+      .h{font:700 12px system-ui,Segoe UI,Arial,sans-serif;fill:#5b6b7e;letter-spacing:.08em}
+      .a{stroke:#5b6b7e;stroke-width:1.6;fill:none;marker-end:url(#m)}
+    </style>
+    <marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b7e"/></marker>
+  </defs>
+  <rect class="bg" width="960" height="420"/>
+  <text class="h" x="30" y="30">INPUTS</text><text class="h" x="300" y="30">NORMALISE &amp; AUDIT</text><text class="h" x="560" y="30">GATE</text><text class="h" x="770" y="30">OUTPUTS</text>
+
+  <rect class="box" x="30" y="45" width="210" height="62"/><text class="t" x="45" y="72">AMRFinderPlus</text><text class="s" x="45" y="92">TSV v3.x / v4.x + versions</text>
+  <rect class="box" x="30" y="122" width="210" height="62"/><text class="t" x="45" y="149">FishAMR-Link</text><text class="s" x="45" y="169">feature table · SQLite warehouse</text>
+  <rect class="box" x="30" y="199" width="210" height="62"/><text class="t" x="45" y="226">EpiResNet v5</text><text class="s" x="45" y="246">held-out test predictions</text>
+  <rect class="box" x="30" y="276" width="210" height="62"/><text class="t" x="45" y="303">Your lab files</text><text class="s" x="45" y="323">manifest · AST · breakpoints</text>
+  <rect class="box" x="30" y="353" width="210" height="50"/><text class="t" x="45" y="383">Aggregate · incidence · DDD</text>
+
+  <rect class="box" x="290" y="60" width="220" height="290"/>
+  <text class="t" x="305" y="88">Canonical tables</text>
+  <text class="s" x="305" y="112">• evidence tiers per AMR call</text>
+  <text class="s" x="305" y="132">• screening table → valid negatives</text>
+  <text class="s" x="305" y="152">• label harmonisation (logged)</text>
+  <text class="s" x="305" y="172">• 30 QA rules · strict gate</text>
+  <text class="s" x="305" y="192">• ExclusionLog for every drop</text>
+  <text class="s" x="305" y="212">• deduplication (logged)</text>
+  <text class="s" x="305" y="232">• MIC/zone category re-check</text>
+  <text class="s" x="305" y="252">• comparability flags</text>
+  <text class="s" x="305" y="272">• separate streams, never joined</text>
+  <text class="s" x="305" y="292">• SHA-256 of every input</text>
+
+  <rect class="gate" x="560" y="110" width="170" height="170"/>
+  <text class="t" x="575" y="138">Go / no-go</text>
+  <text class="s" x="575" y="160">7 criteria</text><text class="s" x="575" y="176">shared IDs,</text><text class="s" x="575" y="192">method, breakpoints,</text><text class="s" x="575" y="208">screen provenance,</text><text class="s" x="575" y="224">cited map, no organism</text><text class="s" x="575" y="240">conflict, attestation</text>
+  <text class="t" x="575" y="268">NO-GO: stop</text>
+
+  <rect class="out" x="770" y="45" width="160" height="62"/><text class="t" x="785" y="72">Indicators</text><text class="s" x="785" y="92">R/(S+I+R), Wilson CI</text>
+  <rect class="out" x="770" y="122" width="160" height="62"/><text class="t" x="785" y="149">Concordance</text><text class="s" x="785" y="169">2×2 + discordant list</text>
+  <rect class="out" x="770" y="199" width="160" height="62"/><text class="t" x="785" y="226">Context streams</text><text class="s" x="785" y="246">predictions · incidence</text>
+  <rect class="out" x="770" y="276" width="160" height="62"/><text class="t" x="785" y="303">Report + manifest</text><text class="s" x="785" y="323">limits · hashes · versions</text>
+
+  <path class="a" d="M240 76 H290"/><path class="a" d="M240 153 H290"/><path class="a" d="M240 230 H290"/><path class="a" d="M240 307 H290"/><path class="a" d="M240 378 H270 V330 H290"/>
+  <path class="a" d="M510 195 H560"/>
+  <path class="a" d="M730 195 H750 V153 H770"/>
+  <path class="a" d="M510 90 H540 V76 H770"/>
+  <path class="a" d="M510 330 H750 V230 H770"/>
+  <path class="a" d="M510 345 H750 V307 H770"/>
+</svg>

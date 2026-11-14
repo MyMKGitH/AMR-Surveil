@@ -1,0 +1,2 @@
+year,country,source_sector,organism,antimicrobial,resistant_infection_n,population_n,population_multiplier,source_name,case_definition,source_url
+2024,Exampleland,human,Escherichia coli,Cefotaxime,8,1000000,100000,Synthetic incidence fixture,Synthetic resistant bloodstream infection episodes,https://example.invalid/synthetic-incidence

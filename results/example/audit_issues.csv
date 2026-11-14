@@ -1,0 +1,2 @@
+table,severity,code,message,row_count,examples
+amr_calls,WARNING,low_confidence_evidence_tier,Calls from heuristic-motif or generic homology-search methods are not validated resistance-gene detections. They are excluded from linkage and concordance by the configured evidence-tier policy.,5,"[""3"", ""46"", ""78"", ""91"", ""114""]"

@@ -1,0 +1,9 @@
+sample_id,replicon,mobility_prediction,method,database,database_version,source_system,evidence_tier
+SYN-00001,IncFIB-like,unknown,synthetic_placeholder,SYNTHETIC-PLASMID-DB,0.0,AMRFinderPlus,curated_database
+SYN-00016,IncFIB-like,unknown,synthetic_placeholder,SYNTHETIC-PLASMID-DB,0.0,AMRFinderPlus,curated_database
+SYN-00031,IncFIB-like,unknown,synthetic_placeholder,SYNTHETIC-PLASMID-DB,0.0,AMRFinderPlus,curated_database
+SYN-00046,IncFIB-like,unknown,synthetic_placeholder,SYNTHETIC-PLASMID-DB,0.0,AMRFinderPlus,curated_database
+SYN-00061,IncFIB-like,unknown,synthetic_placeholder,SYNTHETIC-PLASMID-DB,0.0,AMRFinderPlus,curated_database
+SYN-00076,IncFIB-like,unknown,synthetic_placeholder,SYNTHETIC-PLASMID-DB,0.0,AMRFinderPlus,curated_database
+SYN-00091,IncFIB-like,unknown,synthetic_placeholder,SYNTHETIC-PLASMID-DB,0.0,AMRFinderPlus,curated_database
+SYN-00106,IncFIB-like,unknown,synthetic_placeholder,SYNTHETIC-PLASMID-DB,0.0,AMRFinderPlus,curated_database

@@ -1,0 +1,22 @@
+sample_id,organism,antimicrobial,discordance_type,mapped_genes_detected,result,mic,method,breakpoint_standard,breakpoint_version,screen_database,screen_database_version
+SYN-00006,Klebsiella pneumoniae,Ciprofloxacin,phenotype_R_without_mapped_gene,[],R,2,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00007,Escherichia coli,Cefotaxime,mapped_gene_detected_but_phenotype_not_R,"[""blaCTX-M-15""]",S,0.125,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00009,Klebsiella pneumoniae,Cefotaxime,phenotype_R_without_mapped_gene,[],R,32,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00032,Klebsiella pneumoniae,Meropenem,mapped_gene_detected_but_phenotype_not_R,"[""blaKPC-2""]",S,1,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00035,Klebsiella pneumoniae,Ciprofloxacin,mapped_gene_detected_but_phenotype_not_R,"[""qnrS1""]",S,0.25,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00038,Klebsiella pneumoniae,Meropenem,phenotype_R_without_mapped_gene,[],R,16,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00039,Klebsiella pneumoniae,Ciprofloxacin,phenotype_R_without_mapped_gene,[],R,4,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00043,Escherichia coli,Meropenem,mapped_gene_detected_but_phenotype_not_R,"[""blaKPC-2""]",S,0.125,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00049,Escherichia coli,Meropenem,phenotype_R_without_mapped_gene,[],R,32,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00051,Klebsiella pneumoniae,Cefotaxime,phenotype_R_without_mapped_gene,[],R,4,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00058,Escherichia coli,Meropenem,phenotype_R_without_mapped_gene,[],R,32,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00061,Escherichia coli,Meropenem,phenotype_R_without_mapped_gene,[],R,32,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00065,Klebsiella pneumoniae,Ciprofloxacin,phenotype_R_without_mapped_gene,[],R,4,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00070,Escherichia coli,Ciprofloxacin,phenotype_R_without_mapped_gene,[],R,1,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00074,Klebsiella pneumoniae,Cefotaxime,mapped_gene_detected_but_phenotype_not_R,"[""blaCTX-M-15""]",S,0.5,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00086,Klebsiella pneumoniae,Meropenem,phenotype_R_without_mapped_gene,[],R,16,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00090,Klebsiella pneumoniae,Cefotaxime,mapped_gene_detected_but_phenotype_not_R,"[""blaCTX-M-15""]",S,0.125,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00100,Escherichia coli,Ciprofloxacin,mapped_gene_detected_but_phenotype_not_R,"[""qnrS1""]",S,0.25,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00103,Escherichia coli,Ciprofloxacin,phenotype_R_without_mapped_gene,[],R,2,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00104,Klebsiella pneumoniae,Meropenem,mapped_gene_detected_but_phenotype_not_R,"[""blaKPC-2""]",S,0.03,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1
+SYN-00114,Klebsiella pneumoniae,Meropenem,phenotype_R_without_mapped_gene,[],R,32,broth_microdilution,SYNTHETIC,0.0,SYNTHETIC-AMR-DB,2026.1

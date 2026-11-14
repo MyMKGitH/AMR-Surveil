@@ -1,0 +1,123 @@
+{
+  "created_at_utc": "2026-11-14T12:19:59.140822+00:00",
+  "effective_configuration": {
+    "analysis": {
+      "concordance_min_isolates": 10,
+      "confidence_level": 0.95,
+      "deduplication_rule": "none",
+      "excluded_evidence_tiers": [
+        "heuristic_motif",
+        "homology_search"
+      ],
+      "reference_date": "2026-11-07",
+      "review_coverage_pct": 60.0,
+      "review_identity_pct": 90.0,
+      "small_denominator_warning_threshold": 10,
+      "testing_volume_jump_ratio": 2.0
+    },
+    "quality": {
+      "strict": true
+    },
+    "study": {
+      "exclusion_criteria": "None.",
+      "inclusion_criteria": "All synthetic isolates.",
+      "name": "AMR-Surveil synthetic demonstration",
+      "predictions_independence_attested": false,
+      "question": "Does the pipeline recover the planted gene-phenotype association and flag the planted method change?",
+      "sample_selection_documented": true,
+      "selection_description": "Synthetic data generated with a fixed seed; no real isolates or sampling frame exist."
+    }
+  },
+  "environment": {
+    "pandas": "3.0.5",
+    "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+    "python": "3.13.18"
+  },
+  "inputs": {
+    "aggregate_surveillance": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/aggregate_surveillance.csv",
+      "sha256": "365d6754986a43fc9c685808cef7f0bd2b45e44ecfbe9ebfd7ab29c7dcbfa5de"
+    },
+    "amr_calls": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/amr_calls.csv",
+      "sha256": "0a6bdfd6aa9df3980bbc05c772982aec2780419ab35aa463adcad2477a32bf9c"
+    },
+    "ast": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/ast.csv",
+      "sha256": "861f79fb8042650b9f5442e94224380d04f9046b7090e6137b228388f374e7bb"
+    },
+    "breakpoints": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/breakpoints.csv",
+      "sha256": "b26fe5a644ba45bb17e96fa2804aa13a4dd2b299e09ba9ee3c7e8d8919ace130"
+    },
+    "config": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/config.yaml",
+      "sha256": "f1f4b9774de76c975140657570a2b564092d321480170903faa0ce78adc34a9c"
+    },
+    "consumption": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/consumption.csv",
+      "sha256": "804402803a2563887a1a94b6d711ed532d461a864ed6ecf9a8dd94a08e016bf4"
+    },
+    "gene_drug_map": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/gene_drug_map.csv",
+      "sha256": "7a3a6f33964b9e25fab02b38d2ea24feffc9f6727b64b1bffd4626b85e344946"
+    },
+    "incidence": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/incidence.csv",
+      "sha256": "32ab5eb11e109543b912512e6a9ef560d7270e4610ebf94e690312033709bc12"
+    },
+    "plasmids": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/plasmid_calls.csv",
+      "sha256": "5c5a5e6b5b6db367279678daa1e09c84fae26615e20f2f6fa5810760adc63866"
+    },
+    "predictions": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/model_predictions.csv",
+      "sha256": "b5e538bf2f7dda790842c337bc5b8ffdd0d58fa31301033053c0391f3a4f1e8a"
+    },
+    "samples": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/samples.csv",
+      "sha256": "59f8084fe833963fe47620bbba6b99b5c5d1331bf162257dc5f856729c3d2000"
+    },
+    "screening": {
+      "path": "/tmp/claude-0/-home-claude/090fab2c-324d-52c7-a27c-758788f21b3a/scratchpad/regen/example/inputs/screening.csv",
+      "sha256": "9e7690ab1fd1a72e5ea8ecdc669ce59672c171d8f07ebac7da41256a8b4e7bdb"
+    }
+  },
+  "limitations": [
+    "Aggregate resistance, population incidence and antimicrobial consumption streams are never joined to isolate-level genomes by country, year or organism.",
+    "DDD consumption is a standardised population indicator, not patient-level ingestion or individual exposure.",
+    "Genotype-phenotype joins use exact sample_id only; no fuzzy matching is used.",
+    "A negative genotype is defined only for isolates declared as screened; a missing call row is never read as a negative.",
+    "Genotype-phenotype concordance runs only when the go/no-go gate passes and is descriptive, not diagnostic accuracy.",
+    "Model predictions remain predictions: never converted to observed AST, and accuracy-type metrics appear only when independence from training data is attested.",
+    "Genomic relatedness is not evidence of transmission; no transmission, diagnostic, treatment or clinical susceptibility claim is produced."
+  ],
+  "manifest_schema_version": 1,
+  "outputs_sha256": {
+    "aggregate_surveillance_context.csv": "2a67eb5e22a5c8783bc2944730e735d1547b95418750bdab7772df76e3fcd780",
+    "analysis_summary.json": "17ca14e61233983423d80acb24a333d4ec0e520d7b209478807e9d684a9d5baf",
+    "antibiogram.csv": "0406a7a0b66d407c67106bda863d84bcf73476ba902cd671a2a25d719d5c9c32",
+    "ast_category_recheck.csv": "55acccdaa7fb50e9ddc718f4af508719b2bbd7d113ccc7f81fdec0ee5c04bf04",
+    "ast_missingness.csv": "4b67e76ac9f544fa0dd3d14f14b20563ad9eee2082dab496f5e53ff0d0b854b3",
+    "audit_issues.csv": "eb76ef8e9213d04bba3766771a4bf6466327846ec981dcbc9454fbd6c951190a",
+    "comparability_flags.csv": "a5a10d5034c922a1f990e8d542b24e3da506034635ec400be22394d450248984",
+    "consumption_context.csv": "6139092fc3f16425bd21bc6c9898e3f17d4f3c336f8092855934a2b2cfa62621",
+    "data_inventory.csv": "8a3574d7f0b139948f75de87d15c2164a206ddadee873c677a4827475b1a9e6d",
+    "deduplication_log.csv": "bf5844c78946886b5a9cdcc08af078bb70018ce0b3295b36f3d6825cc8d96ea9",
+    "exclusion_log.csv": "221fd1efe7b9e73633956f2e3b1b3a872534ed146edfc007e26b8a3e45290ac0",
+    "gene_drug_descriptive_stratification.csv": "1b675ff4e0177641b829b0f10f46c4473c384650021f53ad069b9c731f21a301",
+    "genotype_phenotype_concordance.csv": "5a2f94d257fc46037ab01f27bf896c0a0a02e62fea8e6cbcd8817d267a6fd908",
+    "genotype_phenotype_discordant.csv": "c7f3041bc6f75c0a34c0c85d6f4ee20f5839562bc48a8fde65b6ee654034e1d9",
+    "incidence_context.csv": "f0c3a9bb38f2161dab08308dc86b63b7b9895d231856797574ed40c8f2b57c7c",
+    "label_harmonisation.csv": "2d880615477be26ce66e5c612e1cb56bab9ffc922196657afac8d010f031a1d3",
+    "matched_isolates.csv": "fbe74901e112206c9cb46adb46cc2be6d1ffaf763590e5f62d05dea9abc123cb",
+    "model_prediction_context.csv": "4fb43a6f8044e196190750af4022af4c245cd3bbdaaabf9b3889517a2b3349ae",
+    "plasmid_calls_linked.csv": "f327f05b2e28a9a6b9ac60077cd9e8861ad767c675ff27a2250baa051db7c08f",
+    "prediction_vs_observed.csv": "0292ce158190221528cf7df250a006856892207142c8b29923629c43bf8cd2f0",
+    "readiness_assessment.json": "75a7f41176424a6270c84cee9f4f08ecf066db4954fd125893a04da0a3339189",
+    "report.md": "ac1f9fcde74b7b275a06dd8d3e8e612240c4b51010edc9c20319a9fd464da088",
+    "resistance_by_group.csv": "d5ebf11b2f9023b8697ea8d4b4c340bcd2ae21bfe0ddc1e03c0920c63e64c479"
+  },
+  "software": "AMR-Surveil",
+  "software_version": "1.1.1"
+}

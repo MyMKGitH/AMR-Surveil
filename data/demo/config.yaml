@@ -1,0 +1,15 @@
+analysis:
+  deduplication_rule: none
+  reference_date: '2026-11-07'
+quality:
+  strict: true
+study:
+  name: AMR-Surveil synthetic demonstration
+  question: Does the pipeline recover the planted gene-phenotype association and flag
+    the planted method change?
+  inclusion_criteria: All synthetic isolates.
+  exclusion_criteria: None.
+  sample_selection_documented: true
+  selection_description: Synthetic data generated with a fixed seed; no real isolates
+    or sampling frame exist.
+  predictions_independence_attested: false

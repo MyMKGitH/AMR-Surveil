@@ -1,0 +1,121 @@
+sample_id,sequencing_accession,source_study,data_license,organism,collection_year,country,region,source_sector,specimen,sequencing_type,amr_screened,n_amr_calls,n_plasmid_calls,n_ast_records,n_predictions,has_genotype_and_ast,ambiguous_sample_id
+SYN-00001,SYNACC000001,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,0,1,3,1,True,False
+SYN-00002,SYNACC000002,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00003,SYNACC000003,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00004,SYNACC000004,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2024,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00005,SYNACC000005,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00006,SYNACC000006,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00007,SYNACC000007,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,3,0,3,1,True,False
+SYN-00008,SYNACC000008,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00009,SYNACC000009,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00010,SYNACC000010,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00011,SYNACC000011,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00012,SYNACC000012,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00013,SYNACC000013,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00014,SYNACC000014,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,1,True,False
+SYN-00015,SYNACC000015,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,3,0,3,1,True,False
+SYN-00016,SYNACC000016,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,1,3,1,True,False
+SYN-00017,SYNACC000017,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00018,SYNACC000018,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00019,SYNACC000019,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2024,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00020,SYNACC000020,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,1,True,False
+SYN-00021,SYNACC000021,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,3,0,3,1,True,False
+SYN-00022,SYNACC000022,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00023,SYNACC000023,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00024,SYNACC000024,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00025,SYNACC000025,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00026,SYNACC000026,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00027,SYNACC000027,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00028,SYNACC000028,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00029,SYNACC000029,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00030,SYNACC000030,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,4,0,3,1,True,False
+SYN-00031,SYNACC000031,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2024,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,1,1,3,1,True,False
+SYN-00032,SYNACC000032,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00033,SYNACC000033,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00034,SYNACC000034,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00035,SYNACC000035,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,3,0,3,1,True,False
+SYN-00036,SYNACC000036,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,1,True,False
+SYN-00037,SYNACC000037,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00038,SYNACC000038,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00039,SYNACC000039,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00040,SYNACC000040,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00041,SYNACC000041,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00042,SYNACC000042,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,1,True,False
+SYN-00043,SYNACC000043,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,3,0,3,1,True,False
+SYN-00044,SYNACC000044,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00045,SYNACC000045,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00046,SYNACC000046,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,1,3,1,True,False
+SYN-00047,SYNACC000047,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00048,SYNACC000048,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00049,SYNACC000049,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2023,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00050,SYNACC000050,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00051,SYNACC000051,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00052,SYNACC000052,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00053,SYNACC000053,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00054,SYNACC000054,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00055,SYNACC000055,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2023,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,1,True,False
+SYN-00056,SYNACC000056,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00057,SYNACC000057,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00058,SYNACC000058,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00059,SYNACC000059,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,1,0,3,1,True,False
+SYN-00060,SYNACC000060,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,1,True,False
+SYN-00061,SYNACC000061,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2023,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,1,3,0,True,False
+SYN-00062,SYNACC000062,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00063,SYNACC000063,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00064,SYNACC000064,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2024,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,0,True,False
+SYN-00065,SYNACC000065,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00066,SYNACC000066,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00067,SYNACC000067,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00068,SYNACC000068,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00069,SYNACC000069,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00070,SYNACC000070,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,0,True,False
+SYN-00071,SYNACC000071,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00072,SYNACC000072,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00073,SYNACC000073,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00074,SYNACC000074,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,0,True,False
+SYN-00075,SYNACC000075,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00076,SYNACC000076,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,1,3,0,True,False
+SYN-00077,SYNACC000077,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,3,0,3,0,True,False
+SYN-00078,SYNACC000078,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,0,True,False
+SYN-00079,SYNACC000079,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2023,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00080,SYNACC000080,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00081,SYNACC000081,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00082,SYNACC000082,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2024,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00083,SYNACC000083,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,3,0,3,0,True,False
+SYN-00084,SYNACC000084,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,4,0,3,0,True,False
+SYN-00085,SYNACC000085,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00086,SYNACC000086,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00087,SYNACC000087,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00088,SYNACC000088,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00089,SYNACC000089,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00090,SYNACC000090,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00091,SYNACC000091,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,3,1,3,0,True,False
+SYN-00092,SYNACC000092,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00093,SYNACC000093,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00094,SYNACC000094,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,0,True,False
+SYN-00095,SYNACC000095,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00096,SYNACC000096,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00097,SYNACC000097,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00098,SYNACC000098,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00099,SYNACC000099,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00100,SYNACC000100,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,5,0,3,0,True,False
+SYN-00101,SYNACC000101,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00102,SYNACC000102,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00103,SYNACC000103,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00104,SYNACC000104,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,3,0,3,0,True,False
+SYN-00105,SYNACC000105,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2022,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00106,SYNACC000106,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,1,3,0,True,False
+SYN-00107,SYNACC000107,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00108,SYNACC000108,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00109,SYNACC000109,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00110,SYNACC000110,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,4,0,3,0,True,False
+SYN-00111,SYNACC000111,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00112,SYNACC000112,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2024,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00113,SYNACC000113,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00114,SYNACC000114,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00115,SYNACC000115,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2022,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,0,0,3,0,True,False
+SYN-00116,SYNACC000116,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2023,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00117,SYNACC000117,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,River Basin,aquatic,fish_tissue,Illumina short-read (synthetic),True,2,0,3,0,True,False
+SYN-00118,SYNACC000118,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Escherichia coli,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00119,SYNACC000119,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2024,Exampleland,Central,human,urine,Illumina short-read (synthetic),True,1,0,3,0,True,False
+SYN-00120,SYNACC000120,AMR-Surveil synthetic fixture,CC0-1.0 synthetic data,Klebsiella pneumoniae,2025,Exampleland,Central,human,blood,Illumina short-read (synthetic),True,0,0,3,0,True,False

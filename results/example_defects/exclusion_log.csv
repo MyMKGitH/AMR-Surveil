@@ -1,0 +1,12 @@
+stage,table,record_id,reason,detail
+evidence_tier,amr_calls,SYN-00005|tetA,excluded_evidence_tier,tier excluded from genotype analysis by configuration
+evidence_tier,amr_calls,SYN-00033|sul1,excluded_evidence_tier,tier excluded from genotype analysis by configuration
+evidence_tier,amr_calls,SYN-00057|tetA,excluded_evidence_tier,tier excluded from genotype analysis by configuration
+evidence_tier,amr_calls,SYN-00069|tetA,excluded_evidence_tier,tier excluded from genotype analysis by configuration
+evidence_tier,amr_calls,SYN-00081|tetA,excluded_evidence_tier,tier excluded from genotype analysis by configuration
+indicators,ast,SYN-00001,ambiguous_sample_id,sample_id is duplicated in the manifest
+indicators,ast,SYN-00001|Cefotaxime,missing_or_invalid_result,no valid S/I/R category
+indicators,ast,SYN-00001|Ciprofloxacin,missing_or_invalid_result,no valid S/I/R category
+indicators,ast,NOT-IN-MANIFEST,unmatched_sample_id,sample_id absent from the manifest
+plasmids,plasmids,SYN-00001,unmatched_or_ambiguous_sample_id,not linked to a unique manifest row
+prediction_eval,predictions,SYN-00001,unmatched_sample_id,prediction sample_id absent from (or ambiguous in) the manifest
