@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 # AMR-Surveil: Streamlit dashboard + CLI. Hugging Face Docker Space compatible (port 7860, non-root user).
-FROM python:3.12-slim
+FROM python:3.15-slim
 
 ARG VERSION=1.1.1
 LABEL org.opencontainers.image.title="AMR-Surveil" \
