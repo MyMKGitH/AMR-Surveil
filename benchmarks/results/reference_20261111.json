@@ -1,0 +1,71 @@
+{
+  "benchmark_type": "synthetic_pipeline_throughput_with_ground_truth_check",
+  "amr_surveil_version": "1.0.0",
+  "warning": "Synthetic engineering benchmark only; not a biological accuracy or operational surveillance validation.",
+  "python": "3.13.18",
+  "pandas": "3.0.5",
+  "platform": "Linux-6.18.44-fc-v338-x86_64-with-glibc2.39",
+  "seed": 20261107,
+  "runs": [
+    {
+      "samples": 100,
+      "elapsed_seconds": 0.599,
+      "samples_per_second": 166.96,
+      "rss_before_mb": 71.0,
+      "rss_after_mb": 76.85,
+      "rss_delta_mb": 5.86,
+      "ast_rows": 300,
+      "amr_call_rows": 143,
+      "qa_errors": 0,
+      "gate_decision": "GO",
+      "concordance_strata": 7,
+      "pooled_ppv_planted_0.92": 0.8977,
+      "pooled_resistance_without_gene_planted_0.06": 0.0519
+    },
+    {
+      "samples": 1000,
+      "elapsed_seconds": 1.1806,
+      "samples_per_second": 847.03,
+      "rss_before_mb": 79.37,
+      "rss_after_mb": 85.94,
+      "rss_delta_mb": 6.57,
+      "ast_rows": 3000,
+      "amr_call_rows": 1389,
+      "qa_errors": 0,
+      "gate_decision": "GO",
+      "concordance_strata": 7,
+      "pooled_ppv_planted_0.92": 0.917,
+      "pooled_resistance_without_gene_planted_0.06": 0.0552
+    },
+    {
+      "samples": 5000,
+      "elapsed_seconds": 3.7849,
+      "samples_per_second": 1321.04,
+      "rss_before_mb": 93.45,
+      "rss_after_mb": 115.48,
+      "rss_delta_mb": 22.03,
+      "ast_rows": 15000,
+      "amr_call_rows": 6958,
+      "qa_errors": 0,
+      "gate_decision": "GO",
+      "concordance_strata": 7,
+      "pooled_ppv_planted_0.92": 0.9209,
+      "pooled_resistance_without_gene_planted_0.06": 0.0604
+    },
+    {
+      "samples": 20000,
+      "elapsed_seconds": 14.6753,
+      "samples_per_second": 1362.83,
+      "rss_before_mb": 120.23,
+      "rss_after_mb": 208.0,
+      "rss_delta_mb": 87.78,
+      "ast_rows": 60000,
+      "amr_call_rows": 28043,
+      "qa_errors": 0,
+      "gate_decision": "GO",
+      "concordance_strata": 7,
+      "pooled_ppv_planted_0.92": 0.9206,
+      "pooled_resistance_without_gene_planted_0.06": 0.0624
+    }
+  ]
+}

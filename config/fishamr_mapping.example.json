@@ -1,0 +1,18 @@
+{
+  "columns": {
+    "sample_id": "isolate_accession",
+    "organism": "organism_name",
+    "gene": "gene_symbol",
+    "identity_pct": "identity_percent",
+    "coverage_pct": "coverage_percent",
+    "contig": "contig_id",
+    "start": "start_position",
+    "end": "end_position",
+    "method": "calling_method",
+    "database": "amr_database",
+    "database_version": "database_release"
+  },
+  "defaults": {
+    "source_system": "FishAMR-Link"
+  }
+}

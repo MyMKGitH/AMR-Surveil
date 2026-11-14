@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use AMR-Surveil in research or educational work, please cite this software and the specific release."
+title: "AMR-Surveil: Reproducible Genomic and Epidemiological Surveillance of Antimicrobial Resistance"
+authors:
+  - family-names: Khalifa
+    given-names: Moad
+affiliation: Independent researcher and software developer
+version: 1.1.1
+date-released: 2026-11-12
+type: software
+license: MIT
+repository-code: https://github.com/MyMKGitH/amr-surveil
+keywords:
+  - antimicrobial resistance
+  - microbial genomics
+  - genomic epidemiology
+  - One Health
+  - surveillance
+  - bioinformatics

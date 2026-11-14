@@ -1,0 +1,18 @@
+services:
+  amr-surveil:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: amr-surveil:1.1.1
+    ports:
+      - "7860:7860"
+    environment:
+      STREAMLIT_SERVER_HEADLESS: "true"
+      STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+    restart: unless-stopped
+    # Uploaded files are processed in an ephemeral temporary directory by the app.
+    # Do not mount sensitive clinical data into a public-hosting deployment.
+
+# CLI usage with the same image (writes to ./out on the host):
+#   docker compose run --rm --entrypoint amr-surveil amr-surveil demo --out /out
+# add a volume such as `- ./out:/out` under the service to keep the results.

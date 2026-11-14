@@ -1,0 +1,18 @@
+{
+  "columns": {
+    "sample_id": "isolate_accession",
+    "antimicrobial": "drug_name",
+    "predicted_mic": "predicted_MIC",
+    "predicted_mic_unit": "MIC_unit",
+    "predicted_class": "predicted_category",
+    "prediction_score": "output_score",
+    "model_version": "model_version",
+    "checkpoint_id": "checkpoint_id",
+    "training_data_version": "training_data_version",
+    "split_strategy": "evaluation_split"
+  },
+  "defaults": {
+    "model_name": "EpiResNet",
+    "source_system": "EpiResNet"
+  }
+}

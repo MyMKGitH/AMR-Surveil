@@ -1,0 +1,13 @@
+{
+  "columns": {
+    "sample_id": "isolate_accession",
+    "replicon": "replicon_type",
+    "mobility_prediction": "mobility_class",
+    "method": "plasmid_calling_method",
+    "database": "plasmid_database",
+    "database_version": "database_release"
+  },
+  "defaults": {
+    "source_system": "FishAMR-Link"
+  }
+}

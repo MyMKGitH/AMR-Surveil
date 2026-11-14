@@ -1,0 +1,35 @@
+# AMR-Surveil default configuration. Every key is validated; unknown keys are rejected.
+# The effective configuration is echoed into run_manifest.json for every run.
+analysis:
+  # No deduplication unless a specific surveillance protocol justifies it. Options:
+  #   none | first_per_patient_species_year | first_per_patient_species_specimen_year
+  deduplication_rule: none
+  confidence_level: 0.95
+  # Display caution flag only; not a universal minimum for surveillance reporting.
+  small_denominator_warning_threshold: 10
+  # null => today's UTC date (recorded in the manifest). Set a date for reproducible 'future date' checks.
+  reference_date: null
+  # AMR-call evidence tiers EXCLUDED from genotype analysis (each exclusion is logged).
+  # Tiers: curated_database | homology_search | heuristic_motif | unspecified
+  excluded_evidence_tiers: [heuristic_motif, homology_search]
+  # Calls below these values are flagged for review (never silently dropped).
+  review_identity_pct: 90
+  review_coverage_pct: 60
+  # Concordance strata with fewer isolates report counts only (no sensitivity/specificity).
+  concordance_min_isolates: 10
+  # Flag year-on-year changes in tested isolates at or above this ratio.
+  testing_volume_jump_ratio: 2.0
+quality:
+  # Stop if a critical ambiguity or impossible value is detected. false = exploratory mode.
+  strict: true
+study:
+  # The go/no-go gate requires an analyst-attested, documented sample-selection process.
+  name: ""
+  question: ""
+  inclusion_criteria: ""
+  exclusion_criteria: ""
+  sample_selection_documented: false
+  selection_description: ""
+  # Set true ONLY if you have verified that the observed-AST isolates were not in the model's
+  # training data and that predictions come from a held-out split. Otherwise only counts are reported.
+  predictions_independence_attested: false
