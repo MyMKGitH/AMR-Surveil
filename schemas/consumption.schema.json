@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/consumption.schema.json",
+  "title": "AMR-Surveil: Antimicrobial consumption (DDD)",
+  "type": "object",
+  "required": [
+    "year",
+    "country",
+    "care_sector",
+    "antimicrobial",
+    "ddd_total",
+    "population_n",
+    "period_days",
+    "source_name"
+  ],
+  "properties": {
+    "year": {
+      "type": "string",
+      "minLength": 1
+    },
+    "country": {
+      "type": "string",
+      "minLength": 1
+    },
+    "care_sector": {
+      "type": "string",
+      "minLength": 1
+    },
+    "antimicrobial": {
+      "type": "string",
+      "minLength": 1
+    },
+    "atc_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ddd_total": {
+      "type": "string",
+      "minLength": 1
+    },
+    "population_n": {
+      "type": "string",
+      "minLength": 1
+    },
+    "period_days": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aware_group": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "data_source_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

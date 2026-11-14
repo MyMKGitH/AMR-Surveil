@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/screening.schema.json",
+  "title": "AMR-Surveil: Screening provenance: which samples were genotyped, with what",
+  "type": "object",
+  "required": [
+    "sample_id"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tool_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "database": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "database_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "identity_threshold_pct": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage_threshold_pct": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_system": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

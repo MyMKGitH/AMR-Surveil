@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/aggregate_surveillance.schema.json",
+  "title": "AMR-Surveil: Aggregate resistance counts (not isolate-linked)",
+  "type": "object",
+  "required": [
+    "year",
+    "country",
+    "organism",
+    "antimicrobial",
+    "resistant_n",
+    "tested_n",
+    "source_name",
+    "metric_definition"
+  ],
+  "properties": {
+    "year": {
+      "type": "string",
+      "minLength": 1
+    },
+    "country": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_sector": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "organism": {
+      "type": "string",
+      "minLength": 1
+    },
+    "antimicrobial": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resistant_n": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tested_n": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "metric_definition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

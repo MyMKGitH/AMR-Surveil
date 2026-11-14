@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/plasmid_calls.schema.json",
+  "title": "AMR-Surveil: Plasmid / replicon evidence",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "replicon"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "replicon": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mobility_prediction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "database": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "database_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_system": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_tier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "curated_database",
+        "homology_search",
+        "heuristic_motif",
+        "unspecified",
+        null
+      ]
+    }
+  },
+  "additionalProperties": true
+}

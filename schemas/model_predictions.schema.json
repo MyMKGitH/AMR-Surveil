@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/model_predictions.schema.json",
+  "title": "AMR-Surveil: Model prediction (never observed AST)",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "antimicrobial"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "antimicrobial": {
+      "type": "string",
+      "minLength": 1
+    },
+    "predicted_mic": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "predicted_mic_unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "predicted_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prediction_score": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checkpoint_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "training_data_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "split_strategy": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_system": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prediction_unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "protein_cluster": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision_threshold": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "probability_temperature": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evaluation_split": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

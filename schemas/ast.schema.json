@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/ast.schema.json",
+  "title": "AMR-Surveil: Phenotypic AST record",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "antimicrobial",
+    "result"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "antimicrobial": {
+      "type": "string",
+      "minLength": 1
+    },
+    "result": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "S",
+        "I",
+        "R",
+        null
+      ]
+    },
+    "mic": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ],
+      "description": "Optional operator <=,<,>=,> then a number; no decimal commas"
+    },
+    "mic_unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "zone_mm": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "breakpoint_standard": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "breakpoint_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "interpretation_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "testing_lab": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

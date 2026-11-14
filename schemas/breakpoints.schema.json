@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/breakpoints.schema.json",
+  "title": "AMR-Surveil: Breakpoint row used to re-check recorded categories",
+  "type": "object",
+  "required": [
+    "organism",
+    "antimicrobial",
+    "standard",
+    "version"
+  ],
+  "properties": {
+    "organism": {
+      "type": "string",
+      "minLength": 1
+    },
+    "antimicrobial": {
+      "type": "string",
+      "minLength": 1
+    },
+    "standard": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mic_s_le": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mic_r_gt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "zone_s_ge": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "zone_r_lt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

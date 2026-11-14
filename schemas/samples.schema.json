@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/samples.schema.json",
+  "title": "AMR-Surveil: Sample / isolate manifest row",
+  "type": "object",
+  "required": [
+    "sample_id"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "collection_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "ISO 8601: YYYY, YYYY-MM or YYYY-MM-DD"
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "region": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_sector": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "examples": [
+        "animal",
+        "aquaculture",
+        "aquatic",
+        "environment",
+        "food",
+        "human",
+        "unknown",
+        "veterinary",
+        "wastewater"
+      ]
+    },
+    "specimen": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "patient_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "host": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sequencing_accession": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sequencing_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_study": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "data_license": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

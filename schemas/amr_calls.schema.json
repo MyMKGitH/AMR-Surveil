@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/amr_calls.schema.json",
+  "title": "AMR-Surveil: AMR determinant call (positive hits only)",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "gene"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gene": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identity_pct": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ],
+      "description": "0-100"
+    },
+    "coverage_pct": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ],
+      "description": "0-100"
+    },
+    "contig": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "start": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "end": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "database": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "database_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_system": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "element_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "determinant_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hit_method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_tier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "curated_database",
+        "homology_search",
+        "heuristic_motif",
+        "unspecified",
+        null
+      ]
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MyMKGitH/amr-surveil/schemas/gene_drug_map.schema.json",
+  "title": "AMR-Surveil: Cited gene-to-antimicrobial mapping",
+  "type": "object",
+  "required": [
+    "organism",
+    "gene",
+    "antimicrobial",
+    "mapping_source"
+  ],
+  "properties": {
+    "organism": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gene": {
+      "type": "string",
+      "minLength": 1
+    },
+    "antimicrobial": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mapping_source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "match_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "exact",
+        "prefix",
+        null
+      ]
+    }
+  },
+  "additionalProperties": true
+}
