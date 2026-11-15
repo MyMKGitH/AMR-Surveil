@@ -22,7 +22,7 @@ short_description: Auditable genomic + epidemiological AMR surveillance workbenc
   <a href="https://github.com/MyMKGitH/AMR-Surveil/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/MyMKGitH/amr-surveil/ci.yml?branch=main&label=CI&logo=github" alt="CI"></a>
   <img src="https://img.shields.io/badge/release-1.1.1-1f6feb" alt="Release 1.1.1">
   <img src="https://img.shields.io/badge/python-3.10%E2%80%933.13-3776AB?logo=python&logoColor=white" alt="Python 3.10-3.13">
-  <img src="https://img.shields.io/badge/tests-388%20passing-2ea44f?logo=pytest&logoColor=white" alt="388 tests">
+  <img src="https://img.shields.io/badge/tests-389%20passing-2ea44f?logo=pytest&logoColor=white" alt="389 tests">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT">
   <img src="https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white" alt="Docker">
   <img src="https://img.shields.io/badge/Hugging%20Face-Docker%20Space-FFD21E?logo=huggingface&logoColor=black" alt="Hugging Face Docker Space">
@@ -65,7 +65,7 @@ Most AMR tools answer one question well. Surveillance fails in the gaps *between
 | **Stable contract** | CLI, config keys, input/output columns and manifest format are versioned ([STABILITY](docs/STABILITY.md)). |
 | **Ground-truth benchmark** | Synthetic data with a planted association; the pipeline must recover it (and does). |
 
-Compared with 0.1.0 (descriptive integration only), the current release adds the genotype–phenotype layer, rebuilds the adapters on the real upstream formats, fixes defects found by adversarial testing and review (see [CHANGELOG](CHANGELOG.md)), and grows from 36 to 388 tests. **The 1.x line means a stable interface, not validation on real data** — see the verification table below.
+Compared with 0.1.0 (descriptive integration only), the current release adds the genotype–phenotype layer, rebuilds the adapters on the real upstream formats, fixes defects found by adversarial testing and review (see [CHANGELOG](CHANGELOG.md)), and grows from 36 to 389 tests. **The 1.x line means a stable interface, not validation on real data** — see the verification table below.
 
 ## Quick start
 
@@ -163,10 +163,11 @@ Peak memory growth at 20,000 isolates: ~90 MB. These are engineering benchmarks 
 
 | | |
 |---|---|
-| ⚠️ Partly verified | Author ran 1.0.0 in a real browser (two defects found, fixed in 1.1.0). The 1.1.0 Map / Antibiogram / Public data hub tabs and the live BV-BRC / NCBI / ECDC connectors have **not** been run against real services; they are tested with mocks. |
-| ✅ Verified | 388 tests pass with warnings as errors · Wilson CI vs Newcombe (1998) reference values · 30+ QA rules each tested both ways · hand-computed 2×2 tables · an independent stdlib re-implementation agrees with the pipeline on 5 synthetic data sets · ~1,750 randomly damaged-input runs: zero crashes · 6 injected faults all caught · planted truth recovered up to 20,000 isolates · defects from the v0.1.0 probe and from two independent review rounds fixed with regression tests |
+| ⚠️ Partly verified | Author ran the Streamlit app in a real browser on a local Windows/conda setup (1.0.0: two defects found and fixed in 1.1.0; later runs: an `rpds-py` environment problem, addressed in 1.1.1). The Map / Antibiogram / Public data hub tabs and the live BV-BRC / NCBI / ECDC connectors have **not** been run against real services; they are tested with mocks. |
+| ✅ Verified | 389 tests pass with warnings as errors · Wilson CI vs Newcombe (1998) reference values · 30+ QA rules each tested both ways · hand-computed 2×2 tables · an independent stdlib re-implementation agrees with the pipeline on 5 synthetic data sets · ~1,750 randomly damaged-input runs: zero crashes · 6 injected faults all caught · planted truth recovered up to 20,000 isolates · defects from the v0.1.0 probe and from two independent review rounds fixed with regression tests |
 | ⚠️ Approximate | ~96% line coverage (stdlib tracer; CI enforces a `pytest-cov` floor) |
-| ❌ Not yet run | Docker build · Streamlit in a real browser · Python 3.10–3.12 / pandas 2.2 (CI matrix only) · adapters on captured live-tool output · any real data set |
+| ✅ Verified in CI | GitHub Actions (CI #16, 2026-11-15) passes on Python 3.10–3.13 with pandas 2.2.3 and the latest pandas, plus the Docker image build, the CLI inside the image and its health endpoint |
+| ❌ Not yet run | Adapters on captured live-tool output · any real data set |
 
 Full record and plan: [docs/VALIDATION.md](docs/VALIDATION.md). Boundaries: [docs/LIMITATIONS.md](docs/LIMITATIONS.md).
 
@@ -187,7 +188,7 @@ amr_surveil/        package (adapters/, validation, genotype_phenotype, comparab
 app.py              Streamlit dashboard          Dockerfile · docker-compose.yml
 config/             documented defaults          schemas/        JSON schemas for every table
 data/demo/          synthetic inputs             results/        example outputs (normal + injected defects)
-benchmarks/         ground-truth benchmark       tests/          388 tests
+benchmarks/         ground-truth benchmark       tests/          389 tests
 docs/               user guide · methods · validation · limitations · architecture · integration · related work · roadmap
 ```
 
