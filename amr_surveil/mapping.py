@@ -80,8 +80,16 @@ def country_resistance(
     unmapped: set[str] = set()
     # Spellings of one country ("USA", "United States") are merged by ISO code before any
     # suppression decision; unrecognised names stay separate and are reported.
-    work["_iso3"] = work["country"].map(country_to_iso3)
-    work["_key"] = work["_iso3"].where(work["_iso3"].notna(), "name:" + work["country"])
+    # Built from plain Python objects: ``Series.map`` / ``.where`` on string dtypes behave
+    # differently across pandas versions when every code is missing.
+    countries = work["country"].astype(str).tolist()
+    iso_codes = [country_to_iso3(name) for name in countries]
+    work["_iso3"] = pd.Series(iso_codes, index=work.index, dtype="object")
+    work["_key"] = pd.Series(
+        [iso if iso else f"name:{name}" for iso, name in zip(iso_codes, countries, strict=True)],
+        index=work.index,
+        dtype="object",
+    )
     for _, group in work.groupby("_key", sort=True):
         iso3 = group["_iso3"].iloc[0]
         iso3 = None if pd.isna(iso3) else str(iso3)

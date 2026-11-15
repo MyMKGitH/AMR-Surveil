@@ -20,6 +20,7 @@ import math
 from pathlib import Path
 from typing import Any
 
+import numpy as np
 import pandas as pd
 
 from amr_surveil.adapters.common import map_columns
@@ -93,6 +94,8 @@ def normalize_epiresnet_test_predictions(
     )
     keep = valid.fillna(False).to_numpy() & prob.notna().to_numpy() & pred.notna().to_numpy()
     n_without = int((~keep).sum())
+    # Plain numpy booleans: missing predictions (pd.NA on recent pandas) are dropped by ``keep`` below.
+    is_resistant = (pred == 1).fillna(False).to_numpy(dtype=bool)
 
     out = pd.DataFrame(
         {
@@ -100,8 +103,8 @@ def normalize_epiresnet_test_predictions(
             "antimicrobial": frame[drug_col],
             "predicted_mic": pd.NA,
             "predicted_mic_unit": pd.NA,
-            "predicted_class": pred.map(
-                lambda v: "predicted_resistant" if v == 1 else "predicted_susceptible"
+            "predicted_class": np.where(
+                is_resistant, "predicted_resistant", "predicted_susceptible"
             ),
             "prediction_score": prob.round(6),
             "model_name": "EpiResNet",

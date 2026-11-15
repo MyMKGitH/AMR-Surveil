@@ -892,3 +892,14 @@ def test_review_app_handles_undated_public_data(tmp_path: Path) -> None:
     ind = pd.read_csv(out / "resistance_by_group.csv")
     assert pd.to_numeric(ind["year"], errors="coerce").isna().all()
     assert not cumulative_antibiogram(ind).empty
+
+
+def test_country_resistance_handles_only_unrecognised_countries() -> None:
+    frame = _indicators()
+    frame = frame[frame["country"] == "Atlantis"]
+    table, unmapped = country_resistance(
+        frame, organism="Escherichia coli", antimicrobial="Ampicillin"
+    )
+    assert unmapped == ["Atlantis"]
+    assert list(table["country"]) == ["Atlantis"]
+    assert table["iso3"].isna().all()

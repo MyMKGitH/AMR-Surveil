@@ -12,6 +12,7 @@ Repository hygiene after the first public upload (no code behaviour change).
 - `CITATION.cff`: removed an invalid top-level `affiliation` key, added the ORCID iD and DOI, corrected the release date.
 - README: the FishAMR-Link and EpiResNet links point to their own repositories.
 - CI lint job pins the ruff series used for formatting; Dependabot is quieter (no Python-image or minimum-version bumps).
+- Fixed two portability bugs that CI found on the newest pandas (3.1): `country_resistance` no longer fails when no country maps to an ISO code, and the EpiResNet adapter no longer raises on rows with a missing prediction (they are dropped and counted, as before). Regression test added.
 
 ## [1.1.1] - 2026-11-14
 
